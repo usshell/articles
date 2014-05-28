@@ -2,6 +2,8 @@
 layout: default
 ---
 
+<link href="/_includes/themes/prettify.css" rel="stylesheet" type="text/css" media="all">
+
 <section class="post">
 {{ content }}
 </section>
@@ -45,4 +47,10 @@ $(function(){
         }
   });
 })
+
+$(function() {
+  window.prettyPrint && prettyPrint();    
+});
 </script>
+
+<script type="text/javascript" src="/_includes/themes//prettify.js"></script>

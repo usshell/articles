@@ -22,7 +22,7 @@ tags:
 	
 接口
 
-```cpp
+<pre class="preetyPrint">
 class Arena {
  public:
   Arena();
@@ -60,7 +60,7 @@ class Arena {
   Arena(const Arena&);
   void operator=(const Arena&);
 };
-```
+</pre>
 
 分配代码
 
