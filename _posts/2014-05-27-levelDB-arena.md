@@ -22,7 +22,7 @@ tags:
 	
 接口
 
-<pre class="prettyprint lang-html">
+<pre class="prettyPrint">
 class Arena {
  public:
   Arena();
