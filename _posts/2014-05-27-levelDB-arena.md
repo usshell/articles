@@ -9,9 +9,9 @@ tags:
 - 内存池
 ---
 # 概括
-	Arena是一个内存管理类,
-	类中使用一个std::vector block_来保存所有 分配的内存块.
-		提供两种内存分配方式: 提供 "对齐内存分配", 与 "不对齐内存分配".
+Arena是一个内存管理类,
+类中使用一个std::vector block_来保存所有 分配的内存块.
+	提供两种内存分配方式: 提供 "对齐内存分配", 与 "不对齐内存分配".
 	对于小内存(小于1K大小), arena提供内置的分配方式,而不是每次都请求 系统的allocator.
 
 # source
@@ -64,7 +64,7 @@ class Arena {
 
 分配代码
 
-```cpp
+<pre class="prettyPrint">
 //在外部(arena.cc)中 定义 了 默认分配块的 大小
 static const int kBlockSize = 4096;
 
@@ -121,6 +121,6 @@ char* Arena::AllocateAligned(size_t bytes) {
   assert((reinterpret_cast<uintptr_t>(result) & (align-1)) == 0); //再一次判断
   return result;
 }
-```
+</pre>
 	
 	
