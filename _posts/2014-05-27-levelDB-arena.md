@@ -15,10 +15,13 @@ tags:
 	对于小内存(小于1K大小), arena提供内置的分配方式,而不是每次都请求 系统的allocator.
 
 # source
+
 /util/arena.h
+
 /util/arena.cc
 	
 接口
+
 ```cpp
 class Arena {
  public:
@@ -60,6 +63,7 @@ class Arena {
 ```
 
 分配代码
+
 ```cpp
 //在外部(arena.cc)中 定义 了 默认分配块的 大小
 static const int kBlockSize = 4096;
