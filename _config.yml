@@ -1,6 +1,6 @@
 markdown: rdiscount
 permalink: /:year/:month/:title/
-url: http://usshell.github.io
+url: http://usshell.github.io/articles
 author: usshell
 pygments: true
 
