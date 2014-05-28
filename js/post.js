@@ -200,9 +200,9 @@ $(document).ready(function(){
         }
     })();
 
-//    $.getScript('articles/js/prettify/prettify.js',function(){
-//        prettyPrint();
-//    });
+/*    $.getScript('articles/js/prettify/prettify.js',function(){
+        prettyPrint();
+    });
 
     if(/\#comment/.test(location.hash)){
         $('#disqus_container .comment').trigger('click');
@@ -212,4 +212,5 @@ $(document).ready(function(){
         $("head").append("<link rel='stylesheet' type='text/css' href='/css/css3-ani.css'/>");
         $.getScript('/js/css3-ani.js',function(){});
     }
+*/
 });
