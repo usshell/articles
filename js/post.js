@@ -200,7 +200,7 @@ $(document).ready(function(){
         }
     })();
 
-    $.getScript('/js/prettify/prettify.js',function(){
+    $.getScript('articles/js/prettify/prettify.js',function(){
         prettyPrint();
     });
 
